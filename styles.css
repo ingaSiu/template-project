@@ -1,0 +1,43 @@
+header {
+  border: 1px solid;
+}
+header nav {
+  border: 1px solid purple;
+}
+
+main {
+  border: 1px solid orange;
+}
+main .new-release {
+  border: 1px solid indigo;
+  display: flex;
+}
+main .new-release .book-box {
+  border: 1px solid hotpink;
+}
+main .reviews {
+  border: 1px solid darkblue;
+}
+main .reviews div {
+  border: 1px solid seagreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .appearances {
+  border: 1px solid peru;
+  text-align: center;
+}
+main .appearances .appearance-box {
+  border: 1px solid brown;
+  display: flex;
+  flex-direction: column;
+}
+main .about-small {
+  text-align: center;
+}
+
+footer {
+  background-color: aqua;
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */
