@@ -52,6 +52,9 @@ header .icon1 {
   border-radius: 50px;
   box-shadow: 0 0 2px #888;
   padding: 0.5em 0.6em;
+  width: 15px;
+  height: 15px;
+  text-align: center;
 }
 
 main {
@@ -68,12 +71,25 @@ main .new-release .book-box {
   display: flex;
   background-color: rgb(23, 21, 27);
   opacity: 0.8;
-}
-main .new-release .book-box .box-text {
-  border: 1px solid hotpink;
   width: 974px;
   height: 605px;
+  padding: 15px;
+}
+main .new-release .book-box .box-text {
+  padding: 20px;
   color: white;
+}
+main .new-release .book-box .box-text p {
+  line-height: 1.7em;
+  font-size: 17px;
+  text-align: left;
+}
+main .new-release .book-box .box-text button {
+  padding: 10px;
+  color: #FE805D;
+  background-color: rgb(23, 21, 27);
+  border-radius: 30%;
+  border: 1px solid #FE805D;
 }
 main .new-release .book-box .img-cover img {
   width: 385px;

@@ -52,13 +52,16 @@ header{
         display: flex;
         justify-content: center;
     }
+
     .icon1{
         display: inline-block;
         background-color: white;
         border-radius: 50px;
         box-shadow: 0 0 2px #888;
         padding: 0.5em 0.6em;
-        
+        width: 15px;
+        height: 15px;
+        text-align: center;
     }
     
 }
@@ -80,12 +83,28 @@ main{
             display: flex;
             background-color: rgb(23, 21, 27);
             opacity: 0.8;
+            width: 974px;
+            height: 605px;
+            padding: 15px;
             .box-text{
-                border: 1px solid hotpink;
-                width: 974px;
-                height: 605px;
-                
+                padding: 20px;
                 color: white;
+                
+                p{
+                    line-height: 1.7em;
+                    font-size: 17px;
+                    text-align: left;
+                }
+                button {
+                    padding: 10px;
+                    color: #FE805D;
+                    background-color: rgb(23, 21, 27);
+                    border-radius: 30px;
+                    border: 1px solid #FE805D;
+                }
+                
+
+                }
             }
             .img-cover{
                
