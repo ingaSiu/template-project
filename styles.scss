@@ -1,12 +1,68 @@
 header{
-    border: 1px solid;
+    border: 1px solid plum;
+   background-color: #17161c;
 
     nav{
-        border: 1px solid purple;
+        display: flex;
+        gap: 25px;
+        padding: 20px;
+     
+        
+        .author-main{
+            display: flex;
+            padding: 20px;
+            justify-content: start;
+            flex-grow: 1;
+            font-size: xx-large;
+        
+            a {
+                text-decoration: none;
+            }
+        }
+
+        .nav-block{
+            display: flex;
+            padding: 20px;
+            justify-content: flex-end;
+            flex-grow: 4;
+
+             div{
+                padding: 10px;
+                text-decoration: none;
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+        .icon1 , .icon2{
+            font-family: 'FontAwesome';
+        }
+    }
+   
+    .name-big{
+        display: flex;
+        font-size: 85px;
+        color: #FE805D;
+        justify-content: center;
+    }
+    span{
+        font-size: 23px;
+        font-family: sans;
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+    .icon1{
+        display: inline-block;
+        background-color: white;
+        border-radius: 50px;
+        box-shadow: 0 0 2px #888;
+        padding: 0.5em 0.6em;
         
     }
-
+    
 }
+
 main{
     border: 1px solid orange;
 
@@ -15,9 +71,31 @@ main{
     .new-release{
         border: 1px solid indigo;
         display: flex;
+        background-image: url(./images/background.png);
+        width: 1903px;
+        height: 1002px;
+        
         
         .book-box{
-            border: 1px solid hotpink;
+            display: flex;
+            background-color: rgb(23, 21, 27);
+            opacity: 0.8;
+            .box-text{
+                border: 1px solid hotpink;
+                width: 974px;
+                height: 605px;
+                
+                color: white;
+            }
+            .img-cover{
+               
+                img{
+                    width: 385px;
+                    object-fit: cover;
+                    opacity: 1;
+                }
+            }
+            
         }
     }
     .reviews{
@@ -26,8 +104,8 @@ main{
         div{
             border: 1px solid seagreen;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-direction: row;
+            
             
         }
     }
@@ -37,7 +115,7 @@ main{
         .appearance-box{
             border: 1px solid brown;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
         }
     }
     .about-small{

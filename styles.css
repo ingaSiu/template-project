@@ -1,8 +1,57 @@
 header {
-  border: 1px solid;
+  border: 1px solid plum;
+  background-color: #17161c;
 }
 header nav {
-  border: 1px solid purple;
+  display: flex;
+  gap: 25px;
+  padding: 20px;
+}
+header nav .author-main {
+  display: flex;
+  padding: 20px;
+  justify-content: start;
+  flex-grow: 1;
+  font-size: xx-large;
+}
+header nav .author-main a {
+  text-decoration: none;
+}
+header nav .nav-block {
+  display: flex;
+  padding: 20px;
+  justify-content: flex-end;
+  flex-grow: 4;
+}
+header nav .nav-block div {
+  padding: 10px;
+  text-decoration: none;
+}
+header nav .nav-block div a {
+  text-decoration: none;
+}
+header nav .icon1, header nav .icon2 {
+  font-family: "FontAwesome";
+}
+header .name-big {
+  display: flex;
+  font-size: 85px;
+  color: #FE805D;
+  justify-content: center;
+}
+header span {
+  font-size: 23px;
+  font-family: sans;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+header .icon1 {
+  display: inline-block;
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0 0 2px #888;
+  padding: 0.5em 0.6em;
 }
 
 main {
@@ -11,9 +60,26 @@ main {
 main .new-release {
   border: 1px solid indigo;
   display: flex;
+  background-image: url(./images/background.png);
+  width: 1903px;
+  height: 1002px;
 }
 main .new-release .book-box {
+  display: flex;
+  background-color: rgb(23, 21, 27);
+  opacity: 0.8;
+}
+main .new-release .book-box .box-text {
   border: 1px solid hotpink;
+  width: 974px;
+  height: 605px;
+  color: white;
+}
+main .new-release .book-box .img-cover img {
+  width: 385px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 1;
 }
 main .reviews {
   border: 1px solid darkblue;
@@ -21,8 +87,7 @@ main .reviews {
 main .reviews div {
   border: 1px solid seagreen;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
 }
 main .appearances {
   border: 1px solid peru;
@@ -31,7 +96,7 @@ main .appearances {
 main .appearances .appearance-box {
   border: 1px solid brown;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 main .about-small {
   text-align: center;
