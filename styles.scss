@@ -1,3 +1,8 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 header{
     border: 1px solid plum;
    background-color: #17161c;
@@ -101,10 +106,16 @@ main{
                     background-color: rgb(23, 21, 27);
                     border-radius: 30px;
                     border: 1px solid #FE805D;
+                    font-size: 15px;
+                    
+                    
+                    &:hover{
+                        background-color: #FE805D;
+                        color: black;
+                    }
+                    
                 }
                 
-
-                }
             }
             .img-cover{
                
@@ -119,15 +130,30 @@ main{
     }
     .reviews{
         border: 1px solid darkblue;
+        background-color: #1f222f;
+        color: #FE805D;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        
+            
 
-        div{
+        .review-col {
+            margin: 10px;
             border: 1px solid seagreen;
             display: flex;
-            flex-direction: row;
+            flex-flow: row wrap;
+            padding: 10px;
+            flex: 0 0 15%;
+            
+            
             
             
         }
     }
+
+
     .appearances{
         border: 1px solid peru;
         text-align: center;
