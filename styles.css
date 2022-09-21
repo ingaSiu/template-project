@@ -3,6 +3,9 @@ body {
   margin: 0;
   padding: 0;
 }
+body a, body a:link, body a:visited {
+  text-decoration: none;
+}
 
 header {
   border: 1px solid plum;
@@ -19,9 +22,6 @@ header nav .author-main {
   justify-content: start;
   flex-grow: 1;
   font-size: xx-large;
-}
-header nav .author-main a {
-  text-decoration: none;
 }
 header nav .nav-block {
   display: flex;
@@ -66,6 +66,18 @@ header .icon1 {
 main {
   border: 1px solid orange;
 }
+main .btn-all {
+  padding: 10px;
+  color: #FE805D;
+  background-color: rgb(23, 21, 27);
+  border-radius: 30px;
+  border: 1px solid #FE805D;
+  font-size: 15px;
+}
+main .btn-all:hover {
+  background-color: #FE805D;
+  color: black;
+}
 main .new-release {
   border: 1px solid indigo;
   display: flex;
@@ -89,18 +101,6 @@ main .new-release .book-box .box-text p {
   line-height: 1.7em;
   font-size: 17px;
   text-align: left;
-}
-main .new-release .book-box .box-text button {
-  padding: 10px;
-  color: #FE805D;
-  background-color: rgb(23, 21, 27);
-  border-radius: 30px;
-  border: 1px solid #FE805D;
-  font-size: 15px;
-}
-main .new-release .book-box .box-text button:hover {
-  background-color: #FE805D;
-  color: black;
 }
 main .new-release .book-box .img-cover img {
   width: 385px;
@@ -127,12 +127,25 @@ main .reviews .review-col {
 }
 main .appearances {
   border: 1px solid peru;
+  background-color: #17161c;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+main .appearances h1 {
+  color: #FE805D;
+}
+main .appearances p {
+  color: white;
 }
 main .appearances .appearance-box {
-  border: 1px solid brown;
+  border: 1px solid white;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
 }
 main .about-small {
   text-align: center;

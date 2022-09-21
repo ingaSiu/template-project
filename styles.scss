@@ -2,10 +2,13 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    a, a:link, a:visited {
+        text-decoration: none;
+    }
 }
 header{
     border: 1px solid plum;
-   background-color: #17161c;
+    background-color: #17161c;
 
     nav{
         display: flex;
@@ -20,9 +23,7 @@ header{
             flex-grow: 1;
             font-size: xx-large;
         
-            a {
-                text-decoration: none;
-            }
+           
         }
 
         .nav-block{
@@ -74,7 +75,20 @@ header{
 main{
     border: 1px solid orange;
 
-  
+    .btn-all {
+        padding: 10px;
+        color: #FE805D;
+        background-color: rgb(23, 21, 27);
+        border-radius: 30px;
+        border: 1px solid #FE805D;
+        font-size: 15px;
+        
+        &:hover{
+            background-color: #FE805D;
+            color: black;
+        }
+        
+    }
 
     .new-release{
         border: 1px solid indigo;
@@ -100,21 +114,7 @@ main{
                     font-size: 17px;
                     text-align: left;
                 }
-                button {
-                    padding: 10px;
-                    color: #FE805D;
-                    background-color: rgb(23, 21, 27);
-                    border-radius: 30px;
-                    border: 1px solid #FE805D;
-                    font-size: 15px;
-                    
-                    
-                    &:hover{
-                        background-color: #FE805D;
-                        color: black;
-                    }
-                    
-                }
+                
                 
             }
             .img-cover{
@@ -147,20 +147,35 @@ main{
             padding: 10px;
             flex: 0 0 15%;
             
-            
-            
-            
         }
     }
 
 
     .appearances{
         border: 1px solid peru;
+        background-color: #17161c;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        
+        h1{
+            color: #FE805D;
+        }
+        p{
+            color: white;
+        }
+
         .appearance-box{
-            border: 1px solid brown;
+            border: 1px solid white;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+            gap: 10px;
+            width: 50%;
+            
+
+
         }
     }
     .about-small{
