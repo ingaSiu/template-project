@@ -53,7 +53,11 @@ header span {
   display: flex;
   justify-content: center;
 }
-header .icon1 {
+
+main {
+  border: 1px solid orange;
+}
+main .icon1 {
   display: inline-block;
   background-color: white;
   border-radius: 50px;
@@ -63,9 +67,13 @@ header .icon1 {
   height: 15px;
   text-align: center;
 }
-
-main {
-  border: 1px solid orange;
+main .icon-all {
+  position: fixed;
+  left: 15px;
+  top: 50vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 main .btn-all {
   padding: 10px;
@@ -83,8 +91,9 @@ main .new-release {
   border: 1px solid indigo;
   display: flex;
   background-image: url(./images/background.png);
-  width: 1903px;
+  width: 100%;
   height: 1002px;
+  justify-content: center;
 }
 main .new-release .book-box {
   display: flex;
@@ -93,6 +102,7 @@ main .new-release .book-box {
   width: 974px;
   height: 605px;
   padding: 15px;
+  margin-top: 200px;
 }
 main .new-release .book-box .box-text {
   padding: 20px;
@@ -115,14 +125,17 @@ main .reviews {
   color: #FE805D;
   text-align: center;
   display: flex;
+  flex-direction: column;
+}
+main .reviews .review-block {
+  display: flex;
   justify-content: center;
-  gap: 50px;
 }
 main .reviews .review-col {
   margin: 10px;
   border: 1px solid seagreen;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
   padding: 10px;
   flex: 0 0 15%;
 }
