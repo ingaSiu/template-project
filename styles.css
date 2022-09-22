@@ -5,6 +5,7 @@ body {
 }
 body a, body a:link, body a:visited {
   text-decoration: none;
+  color: white;
 }
 
 header {
@@ -19,7 +20,7 @@ header nav {
 header nav .author-main {
   display: flex;
   padding: 20px;
-  justify-content: start;
+  justify-content: flex-start;
   flex-grow: 1;
   font-size: xx-large;
 }
@@ -126,19 +127,21 @@ main .reviews .review-col {
   flex: 0 0 15%;
 }
 main .appearances {
-  border: 1px solid peru;
   background-color: #17161c;
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 30px;
   align-items: center;
+  padding: 40px 20px;
 }
-main .appearances h1 {
+main .appearances h2 {
   color: #FE805D;
+  font-size: 45px;
 }
 main .appearances p {
   color: white;
+  font-size: 17px;
 }
 main .appearances .appearance-box {
   border: 1px solid white;
@@ -146,12 +149,22 @@ main .appearances .appearance-box {
   flex-direction: column;
   gap: 10px;
   width: 50%;
+  padding-bottom: 10px;
+}
+main .appearances .appearance-box p {
+  font-size: 23px;
+  padding: 40px 80px;
+  line-height: 39px;
+}
+main .appearances .appearance-box .btn-all {
+  padding: 8px 50px;
 }
 main .about-small {
   text-align: center;
 }
 
 footer {
-  background-color: aqua;
+  background-color: #FE805D;
   text-align: center;
+  min-height: 40px;
 }/*# sourceMappingURL=styles.css.map */

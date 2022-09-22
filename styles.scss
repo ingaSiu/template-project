@@ -4,6 +4,7 @@ body{
     padding: 0;
     a, a:link, a:visited {
         text-decoration: none;
+        color: white;
     }
 }
 header{
@@ -19,7 +20,7 @@ header{
         .author-main{
             display: flex;
             padding: 20px;
-            justify-content: start;
+            justify-content: flex-start;
             flex-grow: 1;
             font-size: xx-large;
         
@@ -152,19 +153,22 @@ main{
 
 
     .appearances{
-        border: 1px solid peru;
         background-color: #17161c;
         text-align: center;
         display: flex;
         flex-direction: column;
         gap: 30px;
         align-items: center;
-        
-        h1{
+        padding: 40px 20px;
+        h2{
             color: #FE805D;
+            font-size: 45px;
+            
         }
         p{
             color: white;
+            font-size: 17px;
+            
         }
 
         .appearance-box{
@@ -173,6 +177,16 @@ main{
             flex-direction: column;
             gap: 10px;
             width: 50%;
+            padding-bottom: 10px;
+            
+            p{
+                font-size: 23px;
+                padding: 40px 80px;
+                line-height: 39px;
+            }
+            .btn-all{
+                padding: 8px 50px ;
+            }
             
 
 
@@ -183,6 +197,7 @@ main{
     }
 }
 footer{
-    background-color: aqua;
+    background-color: #FE805D;
     text-align: center;
+    min-height: 40px;
 }
