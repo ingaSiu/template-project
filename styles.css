@@ -161,6 +161,12 @@ main .appearances .appearance-box .btn-all {
 }
 main .about-small {
   text-align: center;
+  border: 1px solid white;
+  background-color: #1f222f;
+  width: 80%;
+}
+main .about-small p {
+  padding: 10px 50px;
 }
 
 footer {

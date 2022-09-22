@@ -194,6 +194,15 @@ main{
     }
     .about-small{
         text-align: center;
+        border: 1px solid white;
+        background-color: #1f222f;
+        width: 80%;
+       
+        
+
+        p{
+            padding: 10px 50px;
+        }
     }
 }
 footer{
