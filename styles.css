@@ -5,7 +5,10 @@ body {
 }
 body a, body a:link, body a:visited {
   text-decoration: none;
-  color: white;
+  color: #FE805D;
+}
+body a:hover, body a:link:hover, body a:visited:hover {
+  color: black;
 }
 body .title-all {
   font-size: 45px;
@@ -24,6 +27,9 @@ header nav {
   display: flex;
   gap: 25px;
   padding: 10px 60px;
+}
+header nav a, header nav a:link, header nav a:visited {
+  color: white;
 }
 header nav .author-main {
   display: flex;
@@ -74,16 +80,18 @@ main .icon1 {
 }
 main .icon-all {
   position: fixed;
-  left: 15px;
+  left: 20px;
   top: 50vh;
   display: flex;
   flex-direction: column;
   gap: 15px;
+  z-index: 1;
 }
 main .btn-all {
-  padding: 10px;
+  cursor: pointer;
   color: #FE805D;
-  background-color: rgb(23, 21, 27);
+  padding: 10px;
+  background-color: transparent;
   border-radius: 30px;
   border: 1px solid #FE805D;
   font-size: 15px;
@@ -131,6 +139,7 @@ main .reviews {
   text-align: center;
   display: flex;
   flex-direction: column;
+  row-gap: 20px;
 }
 main .reviews .review-block {
   display: flex;
@@ -143,6 +152,19 @@ main .reviews .review-col {
   flex-flow: column;
   padding: 10px;
   flex: 0 0 15%;
+}
+main .reviews .review-col .review-text {
+  color: white;
+  font-size: 17px;
+  line-height: 29px;
+}
+main .reviews .review-col .review-comment {
+  font-size: 14px;
+  width: 55%;
+  line-height: 20px;
+  align-self: center;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #757575;
 }
 main .appearances {
   background-color: #17161c;
@@ -179,8 +201,18 @@ main .about-small {
   background-color: #1f222f;
   width: 80%;
 }
-main .about-small p {
-  padding: 10px 50px;
+main .about-small .btn-all {
+  margin: 10px;
+  padding: 10px 20px;
+}
+main .profile-pic-small img {
+  border-radius: 50%;
+}
+main .about-short {
+  width: 25%;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 footer {

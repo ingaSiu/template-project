@@ -4,7 +4,10 @@ body{
     padding: 0;
     a, a:link, a:visited {
         text-decoration: none;
-        color: white;
+        color: #FE805D;
+        &:hover{
+            color: black;
+        }
     }
     .title-all{
         font-size: 45px;
@@ -22,6 +25,9 @@ header{
         display: flex;
         gap: 25px;
         padding: 10px 60px;
+        a, a:link, a:visited {
+            color: white;
+        }
      
         
         .author-main{
@@ -83,17 +89,18 @@ main{
     
     .icon-all{
         position: fixed;
-        left: 15px;
+        left: 20px;
         top: 50vh;
         display: flex;
         flex-direction: column;
         gap: 15px;
-        
+        z-index: 1;
     }
     .btn-all {
-        padding: 10px;
+        cursor: pointer;
         color: #FE805D;
-        background-color: rgb(23, 21, 27);
+        padding: 10px;
+        background-color: transparent;
         border-radius: 30px;
         border: 1px solid #FE805D;
         font-size: 15px;
@@ -153,6 +160,7 @@ main{
         text-align: center;
         display: flex;
         flex-direction: column;
+        row-gap: 20px;
         
         
          .review-block{
@@ -168,6 +176,21 @@ main{
             padding: 10px;
             flex: 0 0 15%;
             
+            
+            .review-text{
+                color: white;
+                font-size: 17px;
+                line-height: 29px;
+            }
+            .review-comment{
+                font-size: 14px;
+                width: 55%;
+                line-height: 20px ;
+                align-self: center;
+                padding-bottom: 30px;
+                border-bottom: 1px solid #757575;
+                
+            }
         }
     }
 
@@ -213,12 +236,23 @@ main{
         border: 1px solid white;
         background-color: #1f222f;
         width: 80%;
-       
-        
 
-        p{
-            padding: 10px 50px;
+        .btn-all{
+            margin: 10px;
+            padding: 10px 20px;
         }
+        
+    }
+    .profile-pic-small{
+        img{
+            border-radius: 50%;
+        }
+    }
+    .about-short{
+        width: 25%;
+        margin: 0 auto;
+        font-size: 18px;
+        line-height: 28px;
     }
 }
 footer{
