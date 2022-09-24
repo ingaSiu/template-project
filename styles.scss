@@ -244,6 +244,39 @@ main{
 
             }
         }
+        .about-block{
+            border: 1px solid violet;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+           
+            
+        }
+        .about-box{
+            border: 1px solid olive;
+            width: 50%;
+            display: flex;
+            gap: 50px;
+            background-color: #1f222f;
+            
+            .about-img{
+                padding: 50px;
+                img{
+                    width: 250px;
+                }
+            }
+            
+            .about-text{
+                
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-self: center;
+                padding-right: 15px;
+                line-height: 27px;
+            }
+        }
     }
     .reviews{
         border: 1px solid darkblue;

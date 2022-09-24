@@ -214,6 +214,34 @@ main .new-release .news-box .block-footer {
   color: white;
   border-top: 1px solid white;
 }
+main .new-release .about-block {
+  border: 1px solid violet;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+main .new-release .about-box {
+  border: 1px solid olive;
+  width: 50%;
+  display: flex;
+  gap: 50px;
+  background-color: #1f222f;
+}
+main .new-release .about-box .about-img {
+  padding: 50px;
+}
+main .new-release .about-box .about-img img {
+  width: 250px;
+}
+main .new-release .about-box .about-text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding-right: 15px;
+  line-height: 27px;
+}
 main .reviews {
   border: 1px solid darkblue;
   background-color: #1f222f;
