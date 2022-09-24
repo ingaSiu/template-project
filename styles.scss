@@ -115,11 +115,14 @@ main{
     .new-release{
         border: 1px solid indigo;
         display: flex;
+        flex-direction: column;
         background-image: url(./images/background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
         width: 100%;
         height: auto;
-        justify-content: center;
-        
+        align-items: center;
+       
         
         .book-box{
             display: flex;
@@ -133,17 +136,18 @@ main{
             .box-text{
                 padding: 20px;
                 color: white;
-                
+               
                 p{
                     line-height: 1.7em;
                     font-size: 17px;
                     text-align: left;
                 }
-                
-                
+                // TODO: fix align with other items 
+                // .about-release{
+                //     width: 50%;
+                // }
             }
             .img-cover{
-               
                 img{
                     width: 385px;
                     object-fit: cover;
@@ -151,6 +155,46 @@ main{
                 }
             }
             
+        }
+        .page{
+            margin: 50px;
+            padding: 50px;
+        }
+        .book-box-page{
+            display: flex;
+            background-color: rgb(23, 21, 27);
+            opacity: 0.8;
+            width: 974px;
+            height: auto;
+            padding: 30px;
+            border-bottom: 1px solid grey;
+            
+            
+            hr{
+                width: 60%;
+                margin-left: 0;
+                color: white;
+            }
+            .box-text-page{
+                padding: 20px;
+                color: white;
+               
+                p{
+                    line-height: 1.7em;
+                    font-size: 17px;
+                    text-align: left;
+                }
+            }
+            .about-release-page{
+                width: 55%;
+                padding-bottom: 25px;
+            }
+            .img-cover-page{
+                img{
+                    width: 305px;
+                    object-fit: cover;
+                }
+            }
         }
     }
     .reviews{
@@ -181,13 +225,15 @@ main{
                 color: white;
                 font-size: 17px;
                 line-height: 29px;
+                
             }
             .review-comment{
                 font-size: 14px;
                 width: 55%;
+                flex-grow: 2;
                 line-height: 20px ;
                 align-self: center;
-                padding-bottom: 30px;
+                // padding-bottom: 30px;
                 border-bottom: 1px solid #757575;
                 
             }
@@ -238,8 +284,8 @@ main{
         width: 80%;
 
         .btn-all{
-            margin: 10px;
-            padding: 10px 20px;
+            margin: 20px;
+            padding: 10px 40px;
         }
         
     }
@@ -254,6 +300,7 @@ main{
         font-size: 18px;
         line-height: 28px;
     }
+ 
 }
 footer{
     background-color: #FE805D;

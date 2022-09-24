@@ -103,10 +103,13 @@ main .btn-all:hover {
 main .new-release {
   border: 1px solid indigo;
   display: flex;
+  flex-direction: column;
   background-image: url(./images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: auto;
-  justify-content: center;
+  align-items: center;
 }
 main .new-release .book-box {
   display: flex;
@@ -131,6 +134,42 @@ main .new-release .book-box .img-cover img {
   -o-object-fit: cover;
      object-fit: cover;
   opacity: 1;
+}
+main .new-release .page {
+  margin: 50px;
+  padding: 50px;
+}
+main .new-release .book-box-page {
+  display: flex;
+  background-color: rgb(23, 21, 27);
+  opacity: 0.8;
+  width: 974px;
+  height: auto;
+  padding: 30px;
+  border-bottom: 1px solid grey;
+}
+main .new-release .book-box-page hr {
+  width: 60%;
+  margin-left: 0;
+  color: white;
+}
+main .new-release .book-box-page .box-text-page {
+  padding: 20px;
+  color: white;
+}
+main .new-release .book-box-page .box-text-page p {
+  line-height: 1.7em;
+  font-size: 17px;
+  text-align: left;
+}
+main .new-release .book-box-page .about-release-page {
+  width: 55%;
+  padding-bottom: 25px;
+}
+main .new-release .book-box-page .img-cover-page img {
+  width: 305px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .reviews {
   border: 1px solid darkblue;
@@ -161,9 +200,9 @@ main .reviews .review-col .review-text {
 main .reviews .review-col .review-comment {
   font-size: 14px;
   width: 55%;
+  flex-grow: 2;
   line-height: 20px;
   align-self: center;
-  padding-bottom: 30px;
   border-bottom: 1px solid #757575;
 }
 main .appearances {
@@ -202,8 +241,8 @@ main .about-small {
   width: 80%;
 }
 main .about-small .btn-all {
-  margin: 10px;
-  padding: 10px 20px;
+  margin: 20px;
+  padding: 10px 40px;
 }
 main .profile-pic-small img {
   border-radius: 50%;
