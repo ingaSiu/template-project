@@ -56,6 +56,7 @@ header .name-big {
   font-size: 85px;
   color: #FE805D;
   justify-content: center;
+  padding: 50px 30px;
 }
 header span {
   font-size: 23px;
@@ -175,10 +176,12 @@ main .new-release .news-box {
   border: 1px solid black;
   display: flex;
   flex-direction: column;
+  padding: 20px;
 }
 main .new-release .news-box .news-post {
   border: 1px solid burlywood;
   display: flex;
+  background-color: #17161c;
 }
 main .new-release .news-box .news-block {
   width: 400px;
@@ -193,6 +196,7 @@ main .new-release .news-box .block-header {
 main .new-release .news-box .block-header p {
   margin: 0;
   font-size: 11px;
+  color: white;
 }
 main .new-release .news-box .block-text h3 {
   color: #FE805D;
@@ -200,9 +204,15 @@ main .new-release .news-box .block-text h3 {
 }
 main .new-release .news-box .block-text p {
   font-size: 15px;
+  color: white;
+}
+main .new-release .news-box .block-text p:hover {
+  color: #FE805D;
 }
 main .new-release .news-box .block-footer {
   display: flex;
+  color: white;
+  border-top: 1px solid white;
 }
 main .reviews {
   border: 1px solid darkblue;

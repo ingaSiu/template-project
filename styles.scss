@@ -62,6 +62,7 @@ header{
         font-size: 85px;
         color: #FE805D;
         justify-content: center;
+        padding: 50px 30px;
     }
     span{
         font-size: 23px;
@@ -201,9 +202,11 @@ main{
             border: 1px solid black;
             display: flex;
             flex-direction: column;
+            padding: 20px;
             .news-post{
                 border: 1px solid burlywood;
                 display: flex;
+                background-color: #17161c;
             }
             .news-block{
                 width: 400px;
@@ -218,6 +221,7 @@ main{
                 p{
                     margin: 0;
                     font-size: 11px;
+                    color: white;
                 }
             }
             .block-text{
@@ -227,10 +231,17 @@ main{
                 }
                 p{
                     font-size: 15px;
+                    color: white;
+                    &:hover{
+                        color: #FE805D;
+                    }
                 }
             }
             .block-footer{
                 display: flex;
+                color: white;
+                border-top: 1px solid white;
+
             }
         }
     }
