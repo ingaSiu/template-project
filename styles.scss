@@ -99,11 +99,12 @@ main{
     .btn-all {
         cursor: pointer;
         color: #FE805D;
-        padding: 10px;
+        padding: 10px 30px;
         background-color: transparent;
         border-radius: 30px;
         border: 1px solid #FE805D;
         font-size: 15px;
+        margin: 10px;
         
         &:hover{
             background-color: #FE805D;
@@ -163,7 +164,7 @@ main{
         .book-box-page{
             display: flex;
             background-color: rgb(23, 21, 27);
-            opacity: 0.8;
+            // opacity: 0.8;
             width: 974px;
             height: auto;
             padding: 30px;
@@ -171,7 +172,7 @@ main{
             
             
             hr{
-                width: 60%;
+                width: 330px;
                 margin-left: 0;
                 color: white;
             }
@@ -194,6 +195,42 @@ main{
                     width: 305px;
                     object-fit: cover;
                 }
+            }
+        }
+        .news-box{
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            .news-post{
+                border: 1px solid burlywood;
+                display: flex;
+            }
+            .news-block{
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+            }
+            .block-header{
+                display: flex;
+                flex-direction: column;
+                
+                p{
+                    margin: 0;
+                    font-size: 11px;
+                }
+            }
+            .block-text{
+                h3{
+                    color: #FE805D;
+                    font-size: 24px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+            .block-footer{
+                display: flex;
             }
         }
     }

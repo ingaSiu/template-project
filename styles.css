@@ -90,11 +90,12 @@ main .icon-all {
 main .btn-all {
   cursor: pointer;
   color: #FE805D;
-  padding: 10px;
+  padding: 10px 30px;
   background-color: transparent;
   border-radius: 30px;
   border: 1px solid #FE805D;
   font-size: 15px;
+  margin: 10px;
 }
 main .btn-all:hover {
   background-color: #FE805D;
@@ -142,14 +143,13 @@ main .new-release .page {
 main .new-release .book-box-page {
   display: flex;
   background-color: rgb(23, 21, 27);
-  opacity: 0.8;
   width: 974px;
   height: auto;
   padding: 30px;
   border-bottom: 1px solid grey;
 }
 main .new-release .book-box-page hr {
-  width: 60%;
+  width: 330px;
   margin-left: 0;
   color: white;
 }
@@ -170,6 +170,39 @@ main .new-release .book-box-page .img-cover-page img {
   width: 305px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+main .new-release .news-box {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+main .new-release .news-box .news-post {
+  border: 1px solid burlywood;
+  display: flex;
+}
+main .new-release .news-box .news-block {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+main .new-release .news-box .block-header {
+  display: flex;
+  flex-direction: column;
+}
+main .new-release .news-box .block-header p {
+  margin: 0;
+  font-size: 11px;
+}
+main .new-release .news-box .block-text h3 {
+  color: #FE805D;
+  font-size: 24px;
+}
+main .new-release .news-box .block-text p {
+  font-size: 15px;
+}
+main .new-release .news-box .block-footer {
+  display: flex;
 }
 main .reviews {
   border: 1px solid darkblue;
