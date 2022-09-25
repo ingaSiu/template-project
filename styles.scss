@@ -187,16 +187,19 @@ main{
         .page{
             margin: 50px;
             padding: 50px;
+            background-color: rgb(23, 21, 27);
         }
         .book-box-page{
             display: flex;
-            background-color: rgb(23, 21, 27);
             // opacity: 0.8;
             width: 974px;
             height: auto;
             padding: 30px;
             border-bottom: 1px solid grey;
-
+            
+            &:last-child{
+                border-bottom: none;
+            }
             hr{
                 width: 330px;
                 margin-left: 0;
