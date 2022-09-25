@@ -205,21 +205,31 @@ main .new-release .news-box {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  gap: 20px;
 }
 main .new-release .news-box .news-post {
-  border: 1px solid burlywood;
   display: flex;
   background-color: #17161c;
 }
 main .new-release .news-box .news-block {
-  width: 400px;
   display: flex;
   flex-direction: column;
   padding: 10px;
+  width: 400px;
+  margin: 15px;
 }
 main .new-release .news-box .block-header {
   display: flex;
-  flex-direction: column;
+  gap: 10px;
+}
+main .new-release .news-box .block-header .dot-icon {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  color: white;
+}
+main .new-release .news-box .block-header .fa-circle-user {
+  color: white;
 }
 main .new-release .news-box .block-header p {
   margin: 0;
@@ -232,7 +242,9 @@ main .new-release .news-box .block-text h3 {
 }
 main .new-release .news-box .block-text p {
   font-size: 15px;
+  line-height: 20px;
   color: white;
+  padding-bottom: 100px;
 }
 main .new-release .news-box .block-text p:hover {
   color: #FE805D;
@@ -241,6 +253,11 @@ main .new-release .news-box .block-footer {
   display: flex;
   color: white;
   border-top: 1px solid white;
+}
+main .new-release .news-box .block-footer .heart-icon {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
 }
 main .new-release .about-block {
   border: 1px solid violet;

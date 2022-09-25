@@ -234,21 +234,39 @@ main{
             display: flex;
             flex-direction: column;
             padding: 20px;
+            gap: 20px;
+            
+            
             .news-post{
-                border: 1px solid burlywood;
                 display: flex;
                 background-color: #17161c;
+                
+                
+               
             }
             .news-block{
-                width: 400px;
                 display: flex;
                 flex-direction: column;
                 padding: 10px;
+                width: 400px;
+                margin: 15px;
             }
+            
             .block-header{
                 display: flex;
-                flex-direction: column;
+                gap: 10px;
                 
+                .dot-icon{
+                    display: flex;
+                    justify-content: flex-end;
+                    flex-grow: 1;
+                    color: white;
+                    
+                }
+                .fa-circle-user{
+                    color: white;
+                }
+                 
                 p{
                     margin: 0;
                     font-size: 11px;
@@ -262,7 +280,9 @@ main{
                 }
                 p{
                     font-size: 15px;
+                    line-height: 20px;
                     color: white;
+                    padding-bottom: 100px;
                     &:hover{
                         color: #FE805D;
                     }
@@ -272,6 +292,13 @@ main{
                 display: flex;
                 color: white;
                 border-top: 1px solid white;
+                
+                
+                .heart-icon{
+                   display: flex;
+                   flex: 1;
+                   justify-content: flex-end; 
+                }
 
             }
         }
