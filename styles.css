@@ -2,6 +2,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 body a, body a:link, body a:visited {
   text-decoration: none;
@@ -46,6 +48,7 @@ header nav .nav-block {
   padding: 20px;
   justify-content: flex-end;
   flex-grow: 4;
+  gap: 35px;
 }
 header nav .nav-block div {
   padding: 10px;
@@ -83,14 +86,10 @@ header span {
   justify-content: center;
 }
 
-main {
-  border: 1px solid orange;
-}
 main .icon1 {
   display: inline-block;
   background-color: white;
   border-radius: 50px;
-  box-shadow: 0 0 2px #888;
   padding: 0.5em 0.6em;
   width: 15px;
   height: 15px;
@@ -120,7 +119,6 @@ main .btn-all:hover {
   color: black;
 }
 main .new-release {
-  border: 1px solid indigo;
   display: flex;
   flex-direction: column;
   background-image: url(./images/background.png);
@@ -138,13 +136,20 @@ main .new-release .book-box {
   height: 605px;
   padding: 15px;
   margin-top: 200px;
+  margin-bottom: 100px;
 }
 main .new-release .book-box .box-text {
   padding: 20px;
   color: white;
 }
-main .new-release .book-box .box-text p {
-  line-height: 1.7em;
+main .new-release .book-box .box-text .order-text {
+  font-size: 23px;
+}
+main .new-release .book-box .about-release {
+  width: 65%;
+}
+main .new-release .book-box .about-release p {
+  line-height: 29px;
   font-size: 17px;
   text-align: left;
 }
@@ -179,6 +184,9 @@ main .new-release .book-box-page .box-text-page p {
   line-height: 1.7em;
   font-size: 17px;
   text-align: left;
+}
+main .new-release .book-box-page .box-text-page .order-text {
+  font-size: 23px;
 }
 main .new-release .book-box-page .about-release-page {
   width: 55%;
@@ -298,25 +306,25 @@ main .new-release form input:hover, main .new-release form textarea:hover {
   color: #FE805D;
 }
 main .reviews {
-  border: 1px solid darkblue;
   background-color: #1f222f;
   color: #FE805D;
   text-align: center;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+  padding-bottom: 100px;
 }
 main .reviews .review-block {
   display: flex;
   justify-content: center;
+  gap: 30px;
 }
 main .reviews .review-col {
   margin: 10px;
-  border: 1px solid seagreen;
   display: flex;
   flex-flow: column;
   padding: 10px;
-  flex: 0 0 15%;
+  flex: 0 0 18%;
 }
 main .reviews .review-col .review-text {
   color: white;
@@ -325,10 +333,12 @@ main .reviews .review-col .review-text {
 }
 main .reviews .review-col .review-comment {
   font-size: 14px;
+  font-weight: 600;
   width: 55%;
   flex-grow: 2;
   line-height: 20px;
   align-self: center;
+  padding-bottom: 20px;
   border-bottom: 1px solid #757575;
 }
 main .appearances {
@@ -336,35 +346,43 @@ main .appearances {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 50px;
   align-items: center;
-  padding: 40px 20px;
 }
-main .appearances p {
+main .appearances h2 {
+  margin-bottom: 0px;
+}
+main .appearances .appearance-text {
   color: white;
   font-size: 17px;
+  width: 20%;
+  line-height: 28px;
 }
 main .appearances .appearance-box {
   border: 1px solid white;
   display: flex;
   flex-direction: column;
-  gap: 10px;
   width: 50%;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
+  align-items: center;
 }
 main .appearances .appearance-box p {
   font-size: 23px;
-  padding: 40px 80px;
+  padding-top: 60px;
   line-height: 39px;
+  color: white;
+}
+main .appearances .appearance-box .appear-text {
+  width: 75%;
 }
 main .appearances .appearance-box .btn-all {
-  padding: 8px 50px;
+  padding: 8px 60px;
 }
 main .about-small {
   text-align: center;
-  border: 1px solid white;
   background-color: #1f222f;
-  width: 80%;
+  width: 90%;
+  padding-bottom: 150px;
 }
 main .about-small .btn-all {
   margin: 20px;
@@ -378,10 +396,11 @@ main .about-short {
   margin: 0 auto;
   font-size: 18px;
   line-height: 28px;
+  color: white;
 }
 
 footer {
   background-color: #FE805D;
   text-align: center;
-  min-height: 40px;
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */

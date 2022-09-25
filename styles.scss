@@ -13,6 +13,8 @@ body{
         font-size: 45px;
         color: #FE805D;
     }
+    display: flex;
+    flex-direction: column;
 }
 header{
     background-color: #17161c;
@@ -49,6 +51,7 @@ header{
             padding: 20px;
             justify-content: flex-end;
             flex-grow: 4;
+            gap: 35px;
 
              div{
                 padding: 10px;
@@ -58,7 +61,6 @@ header{
                         color: #FE805D;
                     }
                 }
-                
             }
         }
       
@@ -94,17 +96,14 @@ header{
         justify-content: center;
         
     }
-    
-  
 }
 
 main{
-    border: 1px solid orange;
+    
     .icon1{
         display: inline-block;
         background-color: white;
         border-radius: 50px;
-        box-shadow: 0 0 2px #888;
         padding: 0.5em 0.6em;
         width: 15px;
         height: 15px;
@@ -138,7 +137,6 @@ main{
     }
 
     .new-release{
-        border: 1px solid indigo;
         display: flex;
         flex-direction: column;
         background-image: url(./images/background.png);
@@ -158,20 +156,25 @@ main{
             padding: 15px;
             //TODO change margin
             margin-top: 200px;
+            margin-bottom: 100px;
             .box-text{
                 padding: 20px;
                 color: white;
                
+                .order-text{
+                    font-size: 23px;
+                }
+            }
+            .about-release{
+                width: 65%;
+
                 p{
-                    line-height: 1.7em;
+                    line-height: 29px;
                     font-size: 17px;
                     text-align: left;
                 }
-                // TODO: fix align with other items 
-                // .about-release{
-                //     width: 50%;
-                // }
             }
+            
             .img-cover{
                 img{
                     width: 385px;
@@ -193,8 +196,7 @@ main{
             height: auto;
             padding: 30px;
             border-bottom: 1px solid grey;
-            
-            
+
             hr{
                 width: 330px;
                 margin-left: 0;
@@ -208,6 +210,9 @@ main{
                     line-height: 1.7em;
                     font-size: 17px;
                     text-align: left;
+                }
+                .order-text{
+                    font-size: 23px;
                 }
             }
             .about-release-page{
@@ -343,27 +348,27 @@ main{
         }
     }
     .reviews{
-        border: 1px solid darkblue;
         background-color: #1f222f;
         color: #FE805D;
         text-align: center;
         display: flex;
         flex-direction: column;
         row-gap: 20px;
+        padding-bottom: 100px;
         
         
          .review-block{
             display: flex;
             justify-content: center;
+            gap: 30px;
          }   
 
         .review-col {
             margin: 10px;
-            border: 1px solid seagreen;
             display: flex;
             flex-flow: column;
             padding: 10px;
-            flex: 0 0 15%;
+            flex: 0 0 18%;
             
             
             .review-text{
@@ -374,11 +379,12 @@ main{
             }
             .review-comment{
                 font-size: 14px;
+                font-weight: 600;
                 width: 55%;
                 flex-grow: 2;
                 line-height: 20px ;
                 align-self: center;
-                // padding-bottom: 30px;
+                padding-bottom: 20px;
                 border-bottom: 1px solid #757575;
                 
             }
@@ -391,42 +397,49 @@ main{
         text-align: center;
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap: 50px;
         align-items: center;
-        padding: 40px 20px;
-       
-        p{
-            color: white;
-            font-size: 17px;
-            
+        // padding: 30px 20px;
+        h2{
+            margin-bottom: 0px;
         }
+       .appearance-text{
+        color: white;
+        font-size: 17px;
+        width: 20%;
+        line-height: 28px;
+       }
+       
 
         .appearance-box{
             border: 1px solid white;
             display: flex;
             flex-direction: column;
-            gap: 10px;
             width: 50%;
-            padding-bottom: 10px;
-            
+            padding-bottom: 40px;
+            align-items: center;
             p{
                 font-size: 23px;
-                padding: 40px 80px;
+                padding-top: 60px;
                 line-height: 39px;
+                color: white;
             }
+            .appear-text{
+                width: 75%; 
+            }
+           
             .btn-all{
-                padding: 8px 50px ;
+                padding: 8px 60px ;
             }
             
-
 
         }
     }
     .about-small{
         text-align: center;
-        border: 1px solid white;
         background-color: #1f222f;
-        width: 80%;
+        width: 90%;
+        padding-bottom: 150px;
 
         .btn-all{
             margin: 20px;
@@ -444,11 +457,14 @@ main{
         margin: 0 auto;
         font-size: 18px;
         line-height: 28px;
+        color: white;
     }
  
 }
 footer{
     background-color: #FE805D;
     text-align: center;
-    min-height: 40px;
+   
+    width: 100%;
+    
 }
