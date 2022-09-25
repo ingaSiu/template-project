@@ -58,18 +58,17 @@ header nav .nav-block div a:hover {
   color: #FE805D;
 }
 header .profile-pic-position {
-  display: grid;
-  grid-template-columns: 238px 2fr;
-  grid-auto-rows: minmax(238px, auto);
   position: relative;
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 100px;
+       column-gap: 100px;
 }
 header .profile-big img {
   width: 238px;
   -o-object-fit: cover;
      object-fit: cover;
-  position: absolute;
-  top: 70px;
-  left: 450px;
+  margin-bottom: -355px;
 }
 header .name-big {
   display: flex;
@@ -143,6 +142,10 @@ main .new-release .book-box .box-text {
 }
 main .new-release .book-box .box-text .order-text {
   font-size: 23px;
+}
+main .new-release .book-box .box-text svg {
+  fill: #FE805D;
+  margin-left: -35px;
 }
 main .new-release .book-box .about-release {
   width: 65%;
@@ -301,6 +304,15 @@ main .new-release .contact-block {
   gap: 30px;
   margin: 50px;
 }
+main .new-release .contact-block .btn-all {
+  background-color: #FE805D;
+  color: black;
+  padding: 10px 60px;
+}
+main .new-release .contact-block .btn-all:hover {
+  background-color: transparent;
+  color: #FE805D;
+}
 main .new-release .contact-block .title-all {
   padding-top: 50px;
 }
@@ -334,15 +346,6 @@ main .new-release form input:focus, main .new-release form textarea:focus {
 main .new-release form input:hover, main .new-release form textarea:hover {
   background-color: #ffbfae;
   border: 2px solid #FE805D;
-  color: #FE805D;
-}
-main .new-release .btn-all {
-  background-color: #FE805D;
-  color: black;
-  padding: 10px 60px;
-}
-main .new-release .btn-all:hover {
-  background-color: transparent;
   color: #FE805D;
 }
 main .reviews {

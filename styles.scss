@@ -66,19 +66,17 @@ header{
       
     }
     .profile-pic-position{
-        display: grid;
-        grid-template-columns: 238px 2fr;
-        grid-auto-rows: minmax(238px, auto);
         position: relative;
+        display: flex;
+        justify-content: center;
+        column-gap: 100px;
     }
     .profile-big{
         
         img{
             width: 238px;
             object-fit: cover;
-            position: absolute;
-            top: 70px;
-            left: 450px;
+            margin-bottom: -355px;
         }
     }
     .name-big{
@@ -164,6 +162,10 @@ main{
                
                 .order-text{
                     font-size: 23px;
+                }
+                svg {
+                    fill:#FE805D;
+                    margin-left: -35px;
                 }
             }
             .about-release{
@@ -348,7 +350,15 @@ main{
             align-items: center;
             gap: 30px;
             margin: 50px;
-           
+            .btn-all{
+                background-color: #FE805D;
+                color: black;
+                padding: 10px 60px;
+                &:hover{
+                    background-color: transparent;
+                    color: #FE805D;
+                }
+            }
             .title-all{
                 padding-top: 50px;
             }
@@ -387,15 +397,7 @@ main{
             }
 
         }
-        .btn-all{
-            background-color: #FE805D;
-            color: black;
-            padding: 10px 60px;
-            &:hover{
-                background-color: transparent;
-                color: #FE805D;
-            }
-        }
+       
     }
     .reviews{
         background-color: #1f222f;
