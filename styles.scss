@@ -15,7 +15,6 @@ body{
     }
 }
 header{
-    border: 1px solid plum;
     background-color: #17161c;
     hr{
         color: white;
@@ -36,8 +35,13 @@ header{
             justify-content: flex-start;
             flex-grow: 1;
             font-size: 28px;
-        
-           
+            color: white;
+            a{
+                &:hover{
+                    color: white;
+                }  
+            }
+             
         }
 
         .nav-block{
@@ -49,20 +53,38 @@ header{
              div{
                 padding: 10px;
                 font-size: 14px;
-                a {
-                    text-decoration: none;
+                a{
+                    &:hover{
+                        color: #FE805D;
+                    }
                 }
+                
             }
         }
       
     }
-   
+    .profile-pic-position{
+        display: grid;
+        grid-template-columns: 238px 2fr;
+        grid-auto-rows: minmax(238px, auto);
+        position: relative;
+    }
+    .profile-big{
+        
+        img{
+            width: 238px;
+            object-fit: cover;
+            position: absolute;
+            top: 70px;
+            left: 450px;
+        }
+    }
     .name-big{
         display: flex;
         font-size: 85px;
         color: #FE805D;
         justify-content: center;
-        padding: 50px 30px;
+        padding: 50px 30px 30px 30px;
     }
     span{
         font-size: 23px;
@@ -70,8 +92,9 @@ header{
         color: white;
         display: flex;
         justify-content: center;
+        
     }
-
+    
   
 }
 
@@ -284,7 +307,8 @@ main{
             flex-direction: column;
             align-items: center;
             gap: 30px;
-            padding: 50px;
+            padding: 50px 200px;
+            margin: 50px;
             p{
                 color: white;
                 text-align: center;

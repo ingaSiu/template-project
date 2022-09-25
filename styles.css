@@ -16,7 +16,6 @@ body .title-all {
 }
 
 header {
-  border: 1px solid plum;
   background-color: #17161c;
 }
 header hr {
@@ -37,6 +36,10 @@ header nav .author-main {
   justify-content: flex-start;
   flex-grow: 1;
   font-size: 28px;
+  color: white;
+}
+header nav .author-main a:hover {
+  color: white;
 }
 header nav .nav-block {
   display: flex;
@@ -48,15 +51,29 @@ header nav .nav-block div {
   padding: 10px;
   font-size: 14px;
 }
-header nav .nav-block div a {
-  text-decoration: none;
+header nav .nav-block div a:hover {
+  color: #FE805D;
+}
+header .profile-pic-position {
+  display: grid;
+  grid-template-columns: 238px 2fr;
+  grid-auto-rows: minmax(238px, auto);
+  position: relative;
+}
+header .profile-big img {
+  width: 238px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 70px;
+  left: 450px;
 }
 header .name-big {
   display: flex;
   font-size: 85px;
   color: #FE805D;
   justify-content: center;
-  padding: 50px 30px;
+  padding: 50px 30px 30px 30px;
 }
 header span {
   font-size: 23px;
@@ -249,7 +266,8 @@ main .new-release .contact-block {
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  padding: 50px;
+  padding: 50px 200px;
+  margin: 50px;
 }
 main .new-release .contact-block p {
   color: white;
