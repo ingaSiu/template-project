@@ -121,7 +121,7 @@ main .btn-all:hover {
 main .new-release {
   display: flex;
   flex-direction: column;
-  background-image: url(./images/background.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -130,8 +130,7 @@ main .new-release {
 }
 main .new-release .book-box {
   display: flex;
-  background-color: rgb(23, 21, 27);
-  opacity: 0.8;
+  background-color: rgba(23, 21, 27, 0.8);
   width: 974px;
   height: 605px;
   padding: 15px;
@@ -157,12 +156,11 @@ main .new-release .book-box .img-cover img {
   width: 385px;
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 1;
 }
 main .new-release .page {
   margin: 50px;
   padding: 50px;
-  background-color: rgb(23, 21, 27);
+  background-color: rgba(23, 21, 27, 0.8);
 }
 main .new-release .book-box-page {
   display: flex;
@@ -201,20 +199,25 @@ main .new-release .book-box-page .img-cover-page img {
      object-fit: cover;
 }
 main .new-release .news-box {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   padding: 20px;
   gap: 20px;
 }
+main .new-release .news-box p {
+  color: white;
+}
 main .new-release .news-box .news-post {
   display: flex;
   background-color: #17161c;
 }
+main .new-release .news-box .news-img img {
+  width: 100%;
+  height: 100%;
+}
 main .new-release .news-box .news-block {
   display: flex;
   flex-direction: column;
-  padding: 10px;
   width: 400px;
   margin: 15px;
 }
@@ -244,7 +247,7 @@ main .new-release .news-box .block-text p {
   font-size: 15px;
   line-height: 20px;
   color: white;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 main .new-release .news-box .block-text p:hover {
   color: #FE805D;
@@ -253,6 +256,7 @@ main .new-release .news-box .block-footer {
   display: flex;
   color: white;
   border-top: 1px solid white;
+  font-size: 15px;
 }
 main .new-release .news-box .block-footer .heart-icon {
   display: flex;
@@ -260,21 +264,22 @@ main .new-release .news-box .block-footer .heart-icon {
   justify-content: flex-end;
 }
 main .new-release .about-block {
-  border: 1px solid violet;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 50px;
+  margin: 50px;
   gap: 40px;
+  background-color: rgba(23, 21, 27, 0.8);
+  width: 1000px;
 }
 main .new-release .about-box {
-  border: 1px solid olive;
-  width: 50%;
+  width: 85%;
   display: flex;
   gap: 50px;
-  background-color: #1f222f;
 }
 main .new-release .about-box .about-img {
-  padding: 50px;
+  padding-top: 30px;
 }
 main .new-release .about-box .about-img img {
   width: 250px;
@@ -283,19 +288,21 @@ main .new-release .about-box .about-text {
   color: white;
   display: flex;
   flex-direction: column;
-  align-self: center;
   padding-right: 15px;
   line-height: 27px;
 }
 main .new-release .contact-block {
-  border: 1px solid black;
-  background-color: #1f222f;
+  background-color: rgba(23, 21, 27, 0.8);
+  width: 980px;
+  height: 898px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
-  padding: 50px 200px;
   margin: 50px;
+}
+main .new-release .contact-block .title-all {
+  padding-top: 50px;
 }
 main .new-release .contact-block p {
   color: white;
@@ -315,14 +322,27 @@ main .new-release form .item-j {
   grid-row: 6/span 2;
   grid-column: 1/span 2;
   resize: none;
-  font-size: 20px;
+  font-size: 15px;
+  padding: 10px;
 }
 main .new-release form input, main .new-release form textarea {
   border: 2px solid white;
 }
+main .new-release form input:focus, main .new-release form textarea:focus {
+  outline: 0;
+}
 main .new-release form input:hover, main .new-release form textarea:hover {
   background-color: #ffbfae;
   border: 2px solid #FE805D;
+  color: #FE805D;
+}
+main .new-release .btn-all {
+  background-color: #FE805D;
+  color: black;
+  padding: 10px 60px;
+}
+main .new-release .btn-all:hover {
+  background-color: transparent;
   color: #FE805D;
 }
 main .reviews {
