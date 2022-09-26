@@ -61,21 +61,29 @@ header .profile-pic-position {
   position: relative;
   display: flex;
   justify-content: center;
-  -moz-column-gap: 100px;
-       column-gap: 100px;
+  -moz-column-gap: 150px;
+       column-gap: 150px;
+}
+header .profile-pic-position .name-main {
+  justify-content: flex-start;
+  padding: 50px 0px 0px 0px;
+}
+header .profile-pic-position .after-name-main {
+  justify-content: flex-start;
+  padding: 0px 0px 50px 0px;
 }
 header .profile-big img {
   width: 238px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: -355px;
+  margin-bottom: -340px;
 }
 header .name-big {
   display: flex;
   font-size: 85px;
   color: #FE805D;
   justify-content: center;
-  padding: 50px 30px 30px 30px;
+  padding: 50px 30px 50px 30px;
 }
 header span {
   font-size: 23px;
@@ -130,8 +138,8 @@ main .new-release {
 main .new-release .book-box {
   display: flex;
   background-color: rgba(23, 21, 27, 0.8);
-  width: 974px;
-  height: 605px;
+  width: 944px;
+  height: 580px;
   padding: 15px;
   margin-top: 200px;
   margin-bottom: 100px;
@@ -148,7 +156,7 @@ main .new-release .book-box .box-text svg {
   margin-left: -35px;
 }
 main .new-release .book-box .about-release {
-  width: 65%;
+  width: 50%;
 }
 main .new-release .book-box .about-release p {
   line-height: 29px;
@@ -416,7 +424,7 @@ main .appearances .appearance-box p {
   color: white;
 }
 main .appearances .appearance-box .appear-text {
-  width: 75%;
+  width: 55%;
 }
 main .appearances .appearance-box .btn-all {
   padding: 8px 60px;
