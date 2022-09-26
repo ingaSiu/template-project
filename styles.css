@@ -39,6 +39,7 @@ header nav .author-main {
   flex-grow: 1;
   font-size: 28px;
   color: white;
+  letter-spacing: 2px;
 }
 header nav .author-main a:hover {
   color: white;
@@ -364,6 +365,11 @@ main .reviews {
   flex-direction: column;
   row-gap: 20px;
   padding-bottom: 100px;
+  align-items: center;
+}
+main .reviews svg {
+  align-self: flex-end;
+  padding-right: 20px;
 }
 main .reviews .review-block {
   display: flex;
@@ -376,6 +382,10 @@ main .reviews .review-col {
   flex-flow: column;
   padding: 10px;
   flex: 0 0 18%;
+}
+main .reviews .review-col svg {
+  fill: #FE805D;
+  align-self: center;
 }
 main .reviews .review-col .review-text {
   color: white;
@@ -401,6 +411,7 @@ main .appearances {
   align-items: center;
 }
 main .appearances h2 {
+  padding-top: 30px;
   margin-bottom: 0px;
 }
 main .appearances .appearance-text {
@@ -419,7 +430,7 @@ main .appearances .appearance-box {
 }
 main .appearances .appearance-box p {
   font-size: 23px;
-  padding-top: 60px;
+  padding-top: 40px;
   line-height: 39px;
   color: white;
 }
@@ -427,13 +438,20 @@ main .appearances .appearance-box .appear-text {
   width: 55%;
 }
 main .appearances .appearance-box .btn-all {
+  margin-top: 20px;
   padding: 8px 60px;
 }
 main .about-small {
   text-align: center;
   background-color: #1f222f;
   width: 90%;
+  height: 500px;
   padding-bottom: 150px;
+  position: relative;
+  margin-top: 100px;
+}
+main .about-small svg {
+  margin-left: 900px;
 }
 main .about-small .btn-all {
   margin: 20px;
@@ -441,6 +459,10 @@ main .about-small .btn-all {
 }
 main .profile-pic-small img {
   border-radius: 50%;
+  margin-top: -340px;
+}
+main .about-small-text {
+  padding-top: 100px;
 }
 main .about-short {
   width: 25%;

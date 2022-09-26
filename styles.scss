@@ -38,6 +38,7 @@ header{
             flex-grow: 1;
             font-size: 28px;
             color: white;
+            letter-spacing: 2px;
             a{
                 &:hover{
                     color: white;
@@ -416,7 +417,12 @@ main{
         flex-direction: column;
         row-gap: 20px;
         padding-bottom: 100px;
-        
+        align-items: center;
+            svg{
+                align-self: flex-end;
+                padding-right: 20px;
+                
+            }
         
          .review-block{
             display: flex;
@@ -430,6 +436,10 @@ main{
             flex-flow: column;
             padding: 10px;
             flex: 0 0 18%;
+            svg {
+                fill:#FE805D;
+                align-self: center;
+            }
             
             
             .review-text{
@@ -460,8 +470,10 @@ main{
         flex-direction: column;
         gap: 50px;
         align-items: center;
-        // padding: 30px 20px;
+        
+        
         h2{
+            padding-top: 30px;
             margin-bottom: 0px;
         }
        .appearance-text{
@@ -481,7 +493,7 @@ main{
             align-items: center;
             p{
                 font-size: 23px;
-                padding-top: 60px;
+                padding-top: 40px;
                 line-height: 39px;
                 color: white;
             }
@@ -490,9 +502,10 @@ main{
             }
            
             .btn-all{
+                margin-top: 20px;
                 padding: 8px 60px ;
             }
-            
+           
 
         }
     }
@@ -500,7 +513,13 @@ main{
         text-align: center;
         background-color: #1f222f;
         width: 90%;
+        height: 500px;
         padding-bottom: 150px;
+        position: relative;
+        margin-top: 100px;
+        svg{
+            margin-left: 900px;
+        }
 
         .btn-all{
             margin: 20px;
@@ -509,9 +528,15 @@ main{
         
     }
     .profile-pic-small{
+        
         img{
             border-radius: 50%;
+            margin-top: -340px;
         }
+    }
+    .about-small-text{
+       padding-top: 100px;
+        
     }
     .about-short{
         width: 25%;
